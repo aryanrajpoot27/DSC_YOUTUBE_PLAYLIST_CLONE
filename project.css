@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    height: 30em;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.sideicon{
+    padding: 10px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60px; 
+    font-family: 'Nunito', sans-serif;
+}
+.sideicon:hover{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.iconspace{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-family: 'Teko', sans-serif;
+    cursor: pointer;
+}
+.searchspace{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 2%;
+    left: 5%;
+}
+#profileicons:hover{
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(215, 215, 215);
+}
+.main{
+    position: fixed;
+    left: 8%;
+    top: 14%;
+    height : 86vh;
+    width: 92vw;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.playlistcard{
+    position: fixed;
+    left: 8%;
+    background-repeat: initial;
+    border-radius: 20px;
+    height: 80vh;
+    width: 28vw;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.646);
+}
+.playlistcard #backimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(50px);
+    z-index: -1;
+}
+.thumbnail{
+    position: fixed;
+    left: 8%;
+    top: 30px;
+    height: 20em;
+    width: 10em;
+    object-fit: cover;
+    z-index: 1;
+}
+.name{
+    position: fixed;
+    left: 10.7%;
+    top: 12em;
+    width: 10em;
+    font-size: 26px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Fira Sans', sans-serif;
+}
+.channel{
+  
+    position: fixed;
+    left: 10.7%;
+    top: 24em;
+    width: 10em;
+    font-size: 16px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    font-family: 'Fira Sans', sans-serif;
+}
+.stats{
+    position: fixed;
+    left: 10.7%;
+    top: 34em;
+    width: 28em;
+    font-size: 12px;
+    font-weight: lighter;
+    color: rgb(238, 234, 234);
+    font-family: 'Fira Sans', sans-serif;
+}
+.threebuttons{
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: 10.5%;
+    top: 26.8em;
+    width: 8em;
+    justify-content: space-evenly;
+}
+.sharebutton{
+    padding: 6px;
+    display: flex;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #d0d0d070;
+    cursor: pointer;
+}
+.sharebutton:hover{
+    background-color: #e7e6e66e;
+}
+.player{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 7.5%;
+    top: 30em;
+    width: 20em;
+    border-radius: 20px;
+}
+.shufflebtn, .playbtn{
+    font-size: 14px;
+    height: 50px;
+    width: 20em;
+    border-radius: 20px;
+    background-color: #d0d0d070;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    font-family: 'Anuphan', sans-serif;
+    padding-bottom: 8px;
+}
+
+.playbtn{
+    color: black;
+    background-color: white;
+}
+
+.videos{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 37%;
+    width: 50em;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+.video{
+    position: relative;
+    left: 0.5em;
+    top: 0.5em;
+    width: 49em;
+    height: 5em;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.title{
+    position: relative;
+    left: 8em;
+    width: 37em;
+}
+.description{
+    position: relative;
+    left: 21em;
+    top: 20em;
+    background-color: aquamarine;
+}
+.vid_thumb{
+    border-radius: 15px;
+    height: 4.5em;
+    position: relative;
+    left: 24em;
+    top: 4.2em;
+    overflow: hidden;
+}
+.video:hover{
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+}
